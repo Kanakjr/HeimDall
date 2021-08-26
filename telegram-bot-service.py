@@ -12,7 +12,7 @@ update_id = None
 
 def main():
     global update_id
-    bot = telegram.Bot('1115657037:AAG4__sJ9JWa1zh-dLmbC6F4bifhh2o5iEI') # HeimDall Telegram Bot AccessID
+    bot = telegram.Bot('PUT YOUR ACCESSID Here') # HeimDall Telegram Bot AccessID
     try:
         update_id = bot.get_updates()[0].update_id
     except IndexError:
