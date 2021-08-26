@@ -1,6 +1,6 @@
 import telegram
 
-bot = telegram.Bot('1115657037:AAG4__sJ9JWa1zh-dLmbC6F4bifhh2o5iEI')
+bot = telegram.Bot('PUT YOUR ACCESSID HERE') # Telegram Bot AccessID
 chatID = '890867052' #Change based on group or user
 
 def sendText(text):
