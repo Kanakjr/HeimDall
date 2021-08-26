@@ -13,6 +13,7 @@ A Chatbot can provide following advantages:
 - Detecting in-progress attacks.
 - Ability to adapt over time.
 
+## Screenshot
 ![Heimdall-Demo](images/heimdall11.png)
 
 
