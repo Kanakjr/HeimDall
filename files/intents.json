@@ -1,0 +1,64 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "Is anyone there?", "Hello", "Good day"],
+         "responses": ["Hello, thanks for visiting", "Hello, Good to see you again", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye"],
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {"tag": "hay",
+         "patterns": ["How are you", "How do you do"],
+         "responses": ["I'm good!", "I am functioning perfectly!"]
+        },
+        {"tag": "master",
+         "patterns": ["Who created you?", "Who is your father?", "Who made you?"],
+         "responses": ["My master is Kanak Dahake Jr.", "I was created by Kanak Dahake Jr.", "My father is Kanak Dahake Jr."]
+        },
+        {"tag": "name",
+         "patterns": ["What is your name?", "Who are you?", "What are you?", "Tell me your name?" ],
+         "responses": ["I'm HeimDall, your CyberSecurity Assistant"]
+        },
+        {"tag": "purpose",
+         "patterns": ["What do you do?", "How can you help me?", "What can you do?", "What is your purpose?" ],
+         "responses": ["I'm your CyberSecurity Assistant, I can help you with your security opperations"]
+        },
+        {"tag": "debug",
+         "patterns": ["enable debug mode", "start debugging", "start diagnostics", "debug mode on" ],
+         "responses": ["Debug mode has been enabled", "Diagnostics started"],
+         "action":"debug_mode"
+        },
+        {"tag": "debugoff",
+         "patterns": ["disable debug mode", "stop debugging", "stop diagnostics", "debug mode off" ],
+         "responses": ["Debug mode has been disabled", "Diagnostics stoped"],
+         "action":"debug_mode_off"
+        },
+        {"tag": "free",
+         "patterns": ["Are you free today?", "When do you work?", "What are your working hours?"],
+         "responses": ["I'm open to help you anytime"]
+        },
+        {"tag": "gen_cert",
+         "patterns": ["Can you generate certificates?", "Create certificates", "make certificates?" ],
+         "responses": ["Do you want to generate certificate for Resource group or VM?"],
+         "context_set": "gen_cert"
+        },
+        {"tag": "gen_cert_type_vm",
+         "patterns": ["VM","Virtual machine"],
+         "responses": ["Okay, generating certificates for Virtual machine"],
+         "context_filter": "gen_cert",
+         "action":"gen_cert_type_vm"
+        },
+        {"tag": "gen_cert_type_rg",
+         "patterns": ["RG","Resource group"],
+         "responses": ["Okay, generating certificates for Resource group"],
+         "context_filter": "gen_cert",
+         "action":"gen_cert_type_rg"
+        }
+   ]
+}
+
